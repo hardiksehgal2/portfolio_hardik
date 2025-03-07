@@ -35,7 +35,7 @@ export const Button = ({
   return (
     <Component
       className={cn(
-        "relative overflow-hidden bg-transparent p-[1px] text-xl md:col-span-2",
+        "relative overflow-hidden bg-transparent p-[1px] text-xl md:col-span-2 cursor-default", // Added cursor-default
         containerClassName
       )}
       style={{
@@ -44,13 +44,13 @@ export const Button = ({
       {...otherProps}
     >
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 cursor-default" // Ensures no hover pointer change
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
-              "h-20 w-20 bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)] opacity-[0.8]",
+              "h-20 w-20 bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)] opacity-[0.8] cursor-default", // Ensures no pointer effect on hover
               borderClassName
             )}
           />
@@ -59,7 +59,7 @@ export const Button = ({
 
       <div
         className={cn(
-          "relative flex h-full w-full items-center justify-center border border-slate-800 bg-slate-900/[0.8] text-sm text-white antialiased backdrop-blur-xl",
+          "relative flex h-full w-full items-center justify-center border border-slate-800 bg-slate-900/[0.8] text-sm text-white antialiased backdrop-blur-xl cursor-default", // Added cursor-default
           className
         )}
         style={{
@@ -114,7 +114,7 @@ export const MovingBorder = ({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
-        className="absolute h-full w-full"
+        className="absolute h-full w-full cursor-default" // Added cursor-default
         width="100%"
         height="100%"
         {...otherProps}
@@ -136,6 +136,7 @@ export const MovingBorder = ({
           display: "inline-block",
           transform,
         }}
+        className="cursor-default" // Added cursor-default
       >
         {children}
       </motion.div>
