@@ -5,12 +5,23 @@ import { useState } from "react";
 
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { MagicButton } from "@/components/ui/magic-button";
+import AnimatedText from "./helper/AnimatedText";
 
 export const Approach = () => {
   return (
     <section className="w-full py-20">
-      <h1 className="heading">
-        My <span className="text-purple">approach</span>
+      <h1 className="heading flex flex-wrap justify-center">
+        <AnimatedText tag="span" delay={0.1} duration={0.6}>
+          My
+        </AnimatedText>{" "}
+        <AnimatedText
+          tag="span"
+          className="text-purple"
+          delay={0.4}
+          duration={0.6}
+        >
+          Approach
+        </AnimatedText>
       </h1>
 
       <div className="my-20 flex flex-col items-center justify-center gap-4 lg:flex-row">
@@ -20,8 +31,8 @@ export const Approach = () => {
           description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            animationSpeed={3}
+            containerClassName="bg-red-300"
           />
         </Card>
 

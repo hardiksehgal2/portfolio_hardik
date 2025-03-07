@@ -28,16 +28,15 @@ export const Hero = () => {
 
       <div className="relative z-10 my-20 flex justify-center">
         <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
-          
           <SplitText
-      text={`Dynamic Web Magic with Next.js`}
-      className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100"
-      delay={50}
-      animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-      animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-      threshold={0.2}
-      rootMargin="-50px"
-    />
+            text={`Dynamic Web Magic with Next.js`}
+            className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100"
+            delay={50}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            threshold={0.2}
+            rootMargin="-50px"
+          />
           {/* SplitText Component for Animated Text */}
           <SplitText
             text="Crafting seamless user experiences with Next.js"
@@ -51,7 +50,7 @@ export const Hero = () => {
           />
 
           <SplitText
-            text={`Hi, I&apos;m ${links.ownerName}, a Next.js developer based in India.`}
+            text={`Hi, I'm ${links.ownerName}, a Next.js developer based in India.`}
             className="mt-8 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl"
             delay={50}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}

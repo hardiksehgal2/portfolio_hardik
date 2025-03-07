@@ -14,7 +14,7 @@ export const navItems: {
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Building scalable and high-performance applications",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -24,7 +24,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Experience in React.js, Flutter, and Next.js",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -34,7 +34,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "My Tech Stack",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -44,7 +44,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Software Engineer passionate about problem-solving",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -52,11 +52,10 @@ export const gridItems = [
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Developed AI-powered auditing platform at IAI Solutions",
+    description: "Built entire Fullstack Website using Next.js, TypeScript, and React",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -65,8 +64,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "Let’s build something innovative together!",
+    description: "Open to collaborations on AI, web, and mobile applications",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -74,45 +73,61 @@ export const gridItems = [
     spareImg: "",
   },
 ] as const;
+// skills.ts
+// skills.ts
+export const skills = [
+  { id: 1, name: "TypeScript", icon: "/ts.svg", color: "#3178C6", bgColor:"#001528" },
+  { id: 2, name: "React.js", icon: "/re.svg", color: "#61DAFB", bgColor:"#001528" },
+  { id: 3, name: "Next.js", icon: "/next.svg", color: "#000000", bgColor:"#001528" },
+  { id: 4, name: "Flutter", icon: "/flutter.svg", color: "#02569B", bgColor:"#001528" },
+  { id: 5, name: "Node.js", icon: "/node.svg", color: "#339933", bgColor:"#001528" },
+  { id: 6, name: "Tailwind CSS", icon: "/tail.svg", color: "#06B6D4", bgColor:"#001528" },
+  { id: 7, name: "MongoDB", icon: "/mongo.svg", color: "#47A248", bgColor:"#001528" },
+  { id: 9, name: "Git", icon: "/git.svg", color: "#F05032", bgColor:"#001528" },
+  { id: 10, name: "Docker", icon: "/docker.svg", color: "#2496ED", bgColor:"#001528" },
+  { id: 11, name: "Dart", icon: "/dart.svg", color: "#0175C2", bgColor:"#001528" },
+] as const;
 
 export const projects = [
   {
     id: 1,
-    title: "FigPro - Collaborative Design Tool",
-    des: "A collaborative design tool with real-time collaboration, vector editing, and a responsive UI.",
+    title: "IAI-Solution Job & Blog Platform",
+    des: "Designed and developed the entire frontend and backend of a job and blog platform. Features include job listings, job applications, blogs, an admin dashboard with special privileges for company members and admins.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://clone-figmaa.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/figma-clone",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/docker.svg"],
+    link: "https://iai-solution.netlify.app",
+    sourceCode: "https://github.com/sanidhyy/iai-solution",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "AI Audit - AI-powered Auditing Platform",
+    des: "Built the complete frontend using React and TypeScript in Next.js. Implemented SSR, dark mode, responsiveness, and seamless API integration, enhancing usability and performance by 25%.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://clone-yoom.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/zoom-clone",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/docker.svg", "/git.svg"],
+    link: "/#projects",
+    sourceCode: "/#projects",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Reels-Pro - AI-powered Reels Platform",
+    des: "A full-stack Next.js application where users can upload reels, view all reels, and authenticate using Auth.js. Integrated a secure backend with Firebase and Stripe for payments.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://ai-imaginify.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/imaginify",
-  },
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/authjs.png", "/mongo.svg"],
+    link: "https://github.com/hardiksehgal2/Reels-Pro",
+    sourceCode: "https://github.com/hardiksehgal2/Reels-Pro",
+},
+
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Empower Her - Women Safety App",
+    des: "Built a real-time safety app using Flutter and Firebase. Features include live location sharing, parent-child chat, shake-to-alert emergency functionality, and integration with emergency services.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://app-iphone.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/apple-clone",
+    iconLists: ["/flutter.svg", "/dart.svg", "/mongo.svg"],
+    link: "https://empower-her.netlify.app",
+    sourceCode: "https://github.com/sanidhyy/empower-her",
   },
 ] as const;
+
 
 export const testimonials = [
   {
@@ -178,53 +193,54 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack App Developer",
+    desc: "Developed and maintained both frontend and backend applications using Next.js, TypeScript, and Node.js. Designed scalable architectures and optimized API performance.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Frontend Developer",
+    desc: "Implemented SSR, dark mode, responsiveness, and seamless API integration using React.js and Next.js, improving performance and usability.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Mobile App Developer",
+    desc: "Built and deployed cross-platform mobile applications using Flutter and Dart. Integrated APIs and optimized app performance with state management techniques.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Software Engineer",
+    desc: "Worked on full-cycle application development, including UI/UX improvements, API integration, and deployment using Docker and GitHub Actions.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
 ] as const;
 
+
 export const socialMedia = [
   {
     name: "GitHub",
     img: "/git.svg",
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/hardiksehgal2/",
   },
   {
-    name: "Twitter",
-    img: "/twit.svg",
-    link: "https://twitter.com/TechnicalShubam",
+    name: "Mail",
+    img: "/mail_pers.svg",
+    link: "mailto:jobs.hardik00@gmail.com",
   },
   {
     name: "LinkedIn",
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://www.linkedin.com/in/hardik-sehgal-8086731b5/",
   },
 ] as const;
 
 export const techStack = {
   stack1: ["React.js", "Next.js", "Typescript"],
-  stack2: ["Vue.js", "AWS", "MongoDB"],
+  stack2: ["Node.js", "MongoDB", "Docker", "GitHub"],
 } as const;
