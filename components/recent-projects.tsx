@@ -5,13 +5,23 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 
 import { PinContainer } from "./ui/3d-pin";
+import AnimatedText from "./helper/AnimatedText";
 
 export const RecentProjects = () => {
   return (
     <section id="projects" className="py-20">
-      <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+      <h1 className="heading flex justify-center flex-wrap">
+        <AnimatedText tag="span" delay={0.1} duration={0.6}>
+          A small selection of
+        </AnimatedText>{" "}
+        <AnimatedText 
+          tag="span" 
+          className="text-purple"
+          delay={0.4} 
+          duration={0.6}
+        >
+          recent projects
+        </AnimatedText>
       </h1>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">

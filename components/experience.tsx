@@ -2,14 +2,25 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/moving-borders";
 import { workExperience } from "@/data";
+import AnimatedText from "./helper/AnimatedText";
 
 export const Experience = () => {
   return (
     <section id="experience" className="py-20">
-      <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+       <h1 className="heading flex flex-wrap justify-center">
+        <AnimatedText tag="span" delay={0.1} duration={0.6}>
+          My
+        </AnimatedText>{" "}
+        <AnimatedText
+          tag="span"
+          className="text-purple"
+          delay={0.4}
+          duration={0.6}
+        >
+          work experience
+        </AnimatedText>
       </h1>
-
+      
       <div className="mt-12 grid w-full grid-cols-1 gap-10 lg:grid-cols-4">
         {workExperience.map((experience) => (
           <Button
