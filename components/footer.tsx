@@ -36,12 +36,12 @@ export const Footer = () => {
           <AnimatedText tag="span" delay={0.1} duration={0.6}>
             digital presence to the next level?
           </AnimatedText>{" "}
-          <p className="mt-10 text-[16px] font-normal">
+          <div className="mt-10 text-[16px] font-normal">
             <AnimatedText tag="span" delay={0.1} duration={0.8}>
               Reach out to me today and let&apos;s discuss how I can help your
               achieve your goals.
             </AnimatedText>{" "}
-          </p>
+          </div>
         </h1>
         {/* <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital

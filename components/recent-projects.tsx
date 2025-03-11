@@ -33,7 +33,7 @@ export const RecentProjects = () => {
             >
               <PinContainer title="Visit" href={link}>
                 <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px]">
-                  <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
+                  <div className="relative h-full w-full overflow-hidden bg-transparent lg:rounded-3xl">
                     <Image
                       height={330}
                       width={552}
@@ -47,7 +47,7 @@ export const RecentProjects = () => {
                     width={464}
                     src={img}
                     alt={title}
-                    className="absolute bottom-0 z-10"
+                    className="absolute bottom-0 z-10 rounded-lg object-cover"
                   />
                 </div>
 
