@@ -59,6 +59,8 @@
     "@react-spring/web": "^9.7.5",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
+    "browserslist": "^4.24.4",
+    "caniuse-lite": "^1.0.30001704",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.6",
     "gsap": "^3.12.7",
